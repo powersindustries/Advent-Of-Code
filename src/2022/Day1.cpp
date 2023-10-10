@@ -1,14 +1,14 @@
+#include "Day1.h"
 #include <string>
 #include <iostream>
 #include <fstream>
 #include <vector>
 #include <algorithm>
-#include "Day1.h"
 
 
 // ----------------------------------------------------------------
 // ----------------------------------------------------------------
-void Day1::Part1(std::vector<int>& inVector)
+int Day1::Part1()
 {
     // Read text file.
     std::string sDataPath = PROJECT_PATH;
@@ -21,7 +21,7 @@ void Day1::Part1(std::vector<int>& inVector)
     {
         if(currLine.empty())
         {
-            inVector.push_back(iTempValue);
+            m_vCalorieVector.push_back(iTempValue);
 
             iTempValue = 0;
         }
@@ -32,23 +32,26 @@ void Day1::Part1(std::vector<int>& inVector)
     }
 
     // Add last value missed by while() statement.
-    inVector.push_back(iTempValue);
+    m_vCalorieVector.push_back(iTempValue);
 
     // Sort array with highest value first.
-    std::sort(inVector.begin(), inVector.end(), std::greater<int>());
+    std::sort(m_vCalorieVector.begin(), m_vCalorieVector.end(), std::greater<int>());
+
+    // return highest calorie count.
+    return m_vCalorieVector[0];
 }
 
 
 // ----------------------------------------------------------------
 // ----------------------------------------------------------------
-int Day1::Part2(const std::vector<int> &inVector)
+int Day1::Part2()
 {
     const int iElfCount = 3;
 
     int iOutput = 0;
     for(int x=0; x < iElfCount; ++x)
     {
-        iOutput += inVector[x];
+        iOutput += m_vCalorieVector[x];
     }
 
     return iOutput;
