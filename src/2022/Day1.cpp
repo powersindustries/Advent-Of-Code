@@ -1,8 +1,6 @@
 #include "Day1.h"
 #include <string>
-#include <iostream>
 #include <fstream>
-#include <vector>
 #include <algorithm>
 
 
@@ -19,7 +17,7 @@ int Day1::Part1()
     int iTempValue = 0;
     while (getline(readFile, currLine))
     {
-        if(currLine.empty())
+        if (currLine.empty())
         {
             m_vCalorieVector.push_back(iTempValue);
 
@@ -49,7 +47,7 @@ int Day1::Part2()
     const int iElfCount = 3;
 
     int iOutput = 0;
-    for(int x=0; x < iElfCount; ++x)
+    for (int x = 0; x < iElfCount; ++x)
     {
         iOutput += m_vCalorieVector[x];
     }

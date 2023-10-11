@@ -44,10 +44,10 @@ int Day2::Part1()
 
         // Set m_EnemyTurn and m_YourTurn data fields.
         const int currLineSize = static_cast<int>(currLine.size());
-        for(int x=0; x < currLineSize; ++x)
+        for (int x = 0; x < currLineSize; ++x)
         {
             const char currChar = currLine[x];
-            if(currChar == 'A' || currChar == 'B' || currChar == 'C')
+            if (currChar == 'A' || currChar == 'B' || currChar == 'C')
             {
                 newMatchData.m_EnemyTurn = m_CharToTurnTypeMap[currChar];
             }
@@ -78,7 +78,8 @@ int Day2::Part1()
         // Set m_iScore.
         newMatchData.m_iScore = static_cast<int>(newMatchData.m_YourTurn) + 1;
 
-        if(newMatchData.m_MatchOutcome == MatchOutcomeType::eWin){
+        if (newMatchData.m_MatchOutcome == MatchOutcomeType::eWin)
+        {
             newMatchData.m_iScore += WIN_AMOUNT;
         }
         else if (newMatchData.m_MatchOutcome == MatchOutcomeType::eTie)
@@ -94,7 +95,7 @@ int Day2::Part1()
     const int iMatchDataVectorSize = static_cast<int>(m_Part1MatchDataVector.size());
     int iOutput = 0;
 
-    for(int x=0; x<iMatchDataVectorSize; ++x)
+    for (int x = 0; x < iMatchDataVectorSize; ++x)
     {
         iOutput += m_Part1MatchDataVector[x].m_iScore;
     }
@@ -119,10 +120,10 @@ int Day2::Part2()
 
         // Set m_EnemyTurn and m_YourTurn data fields.
         const int currLineSize = static_cast<int>(currLine.size());
-        for(int x=0; x < currLineSize; ++x)
+        for (int x = 0; x < currLineSize; ++x)
         {
             const char currChar = currLine[x];
-            if(currChar == 'A' || currChar == 'B' || currChar == 'C')
+            if (currChar == 'A' || currChar == 'B' || currChar == 'C')
             {
                 newMatchData.m_EnemyTurn = m_CharToTurnTypeMap[currChar];
             }
@@ -142,7 +143,8 @@ int Day2::Part2()
         // Set m_iScore.
         newMatchData.m_iScore = static_cast<int>(newMatchData.m_YourTurn) + 1;
 
-        if(newMatchData.m_MatchOutcome == MatchOutcomeType::eWin){
+        if (newMatchData.m_MatchOutcome == MatchOutcomeType::eWin)
+        {
             newMatchData.m_iScore += WIN_AMOUNT;
         }
         else if (newMatchData.m_MatchOutcome == MatchOutcomeType::eTie)
@@ -158,7 +160,7 @@ int Day2::Part2()
     const int iMatchDataVectorSize = static_cast<int>(m_Part2MatchDataVector.size());
     int iOutput = 0;
 
-    for(int x=0; x<iMatchDataVectorSize; ++x)
+    for (int x = 0; x < iMatchDataVectorSize; ++x)
     {
         iOutput += m_Part2MatchDataVector[x].m_iScore;
     }
