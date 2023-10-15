@@ -10,10 +10,12 @@ set(SOURCE_FILES
 
     src/2022/Day1.h
     src/2022/Day1.cpp
-        src/2022/Day2.cpp
-        src/2022/Day2.h
-        src/2022/Day3.cpp
-        src/2022/Day3.h
+    src/2022/Day2.cpp
+    src/2022/Day2.h
+    src/2022/Day3.cpp
+    src/2022/Day3.h
+    src/2022/Day4.cpp
+    src/2022/Day4.h
 
 
 )

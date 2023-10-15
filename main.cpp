@@ -3,6 +3,7 @@
 #include "src/2022/Day1.h"
 #include "src/2022/Day2.h"
 #include "src/2022/Day3.h"
+#include "src/2022/Day4.h"
 
 int main()
 {
@@ -32,6 +33,14 @@ int main()
     Day3 day3;
     std::cout << "Part 1: " << day3.Part1() << std::endl;
     std::cout << "Part 2: " << day3.Part2() << std::endl;
+    std::cout << std::endl;
+
+    // Day 4 Solution.
+    std::cout << "Day 4" << std::endl;
+
+    Day4 day4;
+    std::cout << "Part 1: " << day4.Part1() << std::endl;
+    std::cout << "Part 2: " << day4.Part2() << std::endl;
     std::cout << std::endl;
 
     return 0;

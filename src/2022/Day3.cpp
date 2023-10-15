@@ -7,6 +7,7 @@
 #define ASCII_OFFSET_UPPERCASE 38
 #define ASCII_OFFSET_LOWERCASE 96
 
+
 // ----------------------------------------------------------------
 // ----------------------------------------------------------------
 int Day3::Part1()
@@ -65,6 +66,9 @@ int Day3::Part2()
     return CalculateCommonItemsAmount(vCommonItemsVector);
 }
 
+
+// ----------------------------------------------------------------
+// ----------------------------------------------------------------
 char Day3::GetCommonCharTwo(const std::string &first, const std::string &second)
 {
     for (int x = 0; x < first.size(); ++x)
@@ -81,6 +85,9 @@ char Day3::GetCommonCharTwo(const std::string &first, const std::string &second)
     return char();
 }
 
+
+// ----------------------------------------------------------------
+// ----------------------------------------------------------------
 char Day3::GetCommonCharThree(const std::string &first, const std::string &second, const std::string &third)
 {
     for (int x = 0; x < first.size(); ++x)
@@ -100,6 +107,9 @@ char Day3::GetCommonCharThree(const std::string &first, const std::string &secon
     return char();
 }
 
+
+// ----------------------------------------------------------------
+// ----------------------------------------------------------------
 int Day3::CalculateCommonItemsAmount(const std::vector<char> &InCommonItemsVector)
 {
     int iOutput = 0;
