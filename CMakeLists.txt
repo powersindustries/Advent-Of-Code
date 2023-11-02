@@ -18,6 +18,8 @@ set(SOURCE_FILES
     src/2022/Day4.h
         src/2022/Day5.cpp
         src/2022/Day5.h
+        src/2022/Day6.cpp
+        src/2022/Day6.h
 
 
 )

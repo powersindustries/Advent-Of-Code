@@ -5,6 +5,7 @@
 #include "src/2022/Day3.h"
 #include "src/2022/Day4.h"
 #include "src/2022/Day5.h"
+#include "src/2022/Day6.h"
 
 int main()
 {
@@ -50,6 +51,14 @@ int main()
     Day5 day5;
     std::cout << "Part 1: " << day5.Part1() << std::endl;
     std::cout << "Part 2: " << day5.Part2() << std::endl;
+    std::cout << std::endl;
+
+    // Day 6 Solution.
+    std::cout << "Day 6" << std::endl;
+
+    Day6 day6;
+    std::cout << "Part 1: " << day6.Part1() << std::endl;
+    std::cout << "Part 2: " << day6.Part2() << std::endl;
     std::cout << std::endl;
 
     return 0;
