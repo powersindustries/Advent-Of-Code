@@ -22,6 +22,6 @@ private:
 
 private:
 
-    std::vector<std::stack<char>> m_CrateData;
+    std::vector<std::stack<char> > m_CrateData;
 
 };

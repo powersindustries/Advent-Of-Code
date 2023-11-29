@@ -1,17 +1,16 @@
 #include <iostream>
-#include <vector>
-#include "src/2022/Day1.h"
-#include "src/2022/Day2.h"
-#include "src/2022/Day3.h"
-#include "src/2022/Day4.h"
-#include "src/2022/Day5.h"
-#include "src/2022/Day6.h"
+#include "src/Day1.h"
+#include "src/Day2.h"
+#include "src/Day3.h"
+#include "src/Day4.h"
+#include "src/Day5.h"
+#include "src/Day6.h"
 
 int main()
 {
     std::cout << "Advent of Code!" << std::endl;
 
-    // 2022 Advent of Code.
+    // Advent of Code Solutions for 2022.
 
     // Day 1 Solution.
     std::cout << "Day 1" << std::endl;

@@ -121,7 +121,7 @@ std::string Day5::Part1()
 
     // Read text file.
     std::string sDataPath = PROJECT_PATH;
-    sDataPath.append("/src/2022/Data/Day5Data.txt");
+    sDataPath.append("/src/Data/Day5Data.txt");
     std::ifstream readFile(sDataPath);
     std::string currLine;
 
@@ -149,7 +149,10 @@ std::string Day5::Part1()
             }
         }
 
-        vFoundNumbers.push_back(std::stoi(sTempString));
+        if (!sTempString.empty())
+        {
+            vFoundNumbers.push_back(std::stoi(sTempString));
+        }
 
         MovePart1(vFoundNumbers[0], vFoundNumbers[1] - 1, vFoundNumbers[2] - 1);
     }
@@ -172,7 +175,7 @@ std::string Day5::Part2()
 
     // Read text file.
     std::string sDataPath = PROJECT_PATH;
-    sDataPath.append("/src/2022/Data/Day5Data.txt");
+    sDataPath.append("/src/Data/Day5Data.txt");
     std::ifstream readFile(sDataPath);
     std::string currLine;
 
@@ -200,7 +203,10 @@ std::string Day5::Part2()
             }
         }
 
-        vFoundNumbers.push_back(std::stoi(sTempString));
+        if (!sTempString.empty())
+        {
+            vFoundNumbers.push_back(std::stoi(sTempString));
+        }
 
         MovePart2(vFoundNumbers[0], vFoundNumbers[1] - 1, vFoundNumbers[2] - 1);
     }

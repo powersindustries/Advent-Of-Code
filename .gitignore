@@ -180,3 +180,4 @@ cmake-build-debug/
 # CLion/JetBrains
 .idea/
 cmake-build-debug/
+.DS_Store

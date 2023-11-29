@@ -9,7 +9,7 @@ int Day4::Part1()
 {
     // Read text file.
     std::string sDataPath = PROJECT_PATH;
-    sDataPath.append("/src/2022/Data/Day4Data.txt");
+    sDataPath.append("/src/Data/Day4Data.txt");
     std::ifstream readFile(sDataPath);
     std::string currLine;
 
