@@ -14,6 +14,8 @@ set(SOURCE_FILES
         src/Day1.cpp
         src/Day2.cpp
         src/Day2.h
+        src/Day3.cpp
+        src/Day3.h
 
 )
 

@@ -23,7 +23,6 @@ set(SOURCE_FILES
         src/Day6.cpp
         src/Day6.h
 
-
 )
 
 add_executable(${PROJECT_NAME}  ${SOURCE_FILES})

@@ -25,7 +25,6 @@ Day1::Day1()
 // ----------------------------------------------------------------
 int Day1::Part1()
 {
-    // Read text file.
     std::string sDataPath = PROJECT_PATH;
     sDataPath.append("/src/Data/Day1Data.txt");
     std::ifstream readFile(sDataPath);
@@ -73,7 +72,6 @@ int Day1::Part1()
 // ----------------------------------------------------------------
 int Day1::Part2()
 {
-    // Read text file.
     std::string sDataPath = PROJECT_PATH;
     sDataPath.append("/src/Data/Day1Data.txt");
     std::ifstream readFile(sDataPath);

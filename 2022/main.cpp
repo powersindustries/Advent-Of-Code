@@ -5,6 +5,7 @@
 #include "src/Day4.h"
 #include "src/Day5.h"
 #include "src/Day6.h"
+#include "src/Day7.h"
 
 int main()
 {

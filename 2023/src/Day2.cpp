@@ -17,7 +17,6 @@
 // ----------------------------------------------------------------
 int Day2::Part1()
 {
-    // Read text file.
     std::string sDataPath = PROJECT_PATH;
     sDataPath.append("/src/Data/Day2Data.txt");
     std::ifstream readFile(sDataPath);
